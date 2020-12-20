@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    margin: 0.2rem
+}
+
+body {
+    background-color: rgb(242, 233, 224);
+}
+
+.flex-row {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-card {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    /* box-shadow: rgb(0,0,0,0.1) 0 2px 5px 1px; */
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#location {
+    background-color: rgb(109, 188, 183);
+    box-shadow: rgb(109, 188, 183, 0.1) 0 0 5px 5px;
+    font-weight: normal;
+    border-radius: 3rem;
+    color: white;
+    padding: 0.2rem 1.5rem;
+}
+
+#temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: rgb(240, 164, 131);
+    color: white;
+    box-shadow: rgb(240, 164, 131, 0.15) 0 0 5px 5px;
+}
+
+#description {
+    color: rgb(40, 36, 33);
+}
+
+#units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.3rem;
+    left: 5.5rem;
+    color: rgb(87, 91, 92);
+    font-size: 1.3rem;
+    background-color: rgb(247, 241, 235);
+    box-shadow: rgba(216, 210, 205, 0.15) 0 0 5px 3px;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#units:hover {
+    background-color:rgb(235, 227, 220);
+}
+
+#search-input {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    border: solid 1px transparent;
+    text-align: center;
+
+    transition: transform 0.15s;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: rgba(163, 157, 150, 0.404);
+}
+
+#search-input::placeholder {
+    color: rgb(182, 182, 182);
+}
+
+#search-button-parent {
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+
+.no-width {
+    transform: scaleX(0);
+    
+}
+
+.decoration {
+    position: absolute;
+    z-index: -1;
+}
+
+#bubble-1 {
+    color: transparent;
+    width: 40vmax;
+    height: 40vmax;
+    bottom: 20vmax;
+    left: 20vmax;
+    border-radius: 50%;
+    background-color: rgba(233, 224, 216, 0.479);
+}
+
+#bubble-2 {
+    color: transparent;
+    width: 40vmax;
+    height: 40vmax;
+    top: 20vmax;
+    right: 25vmax;
+    border-radius: 50%;
+    background-color: rgba(224, 216, 208, 0.329);
+}
+
+#bubble-3 {
+    color: transparent;
+    width: 30vmax;
+    height: 30vmax;
+    bottom: 20vmax;
+    right: 20vmax;
+    border-radius: 50%;
+    background-color: rgba(235, 227, 220, 0.473);
+}
+
+/* ICON */
+
+.icon-search {
+    color: rgb(40, 36, 33);
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(1.5);
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+    margin-top: -4px;
+    background-color: transparent;
+}
+
+.icon-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+.icon-search:hover {
+    color: rgb(139, 139, 139);
+}
+
+.icon-search:focus {
+    outline: none;
+    color: rgb(139, 139, 139);
+}

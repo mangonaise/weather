@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="decoration" id="bubble-1">.</div>
+    <div class="decoration" id="bubble-2">.</div>
+    <div class="decoration" id="bubble-3">.</div>
+    <div class="flex-row">
+        <div id="weather-card">
+            <h2 id="location">Weather</h2>
+            
+            <div style="position: relative; right: 1rem">
+                <p id="temperature">. . .</p>
+                <p id="units">°C</p>
+            </div>
+            
+            <h2 id="description">Search for a city.</h2>
+
+            <br><br>
+            <div id="search-button-parent">
+                <button id="search-button" class="icon-search" alt="search"></button>
+            </div>
+            
+            <input type="text" placeholder="Enter city" id="search-input" class="no-width">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
