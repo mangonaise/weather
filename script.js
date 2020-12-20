@@ -6,7 +6,6 @@ const weatherDescriptionText = document.getElementById('description');
 const unitsButton = document.getElementById('units');
 
 let units = 'celsius';
-
 let currentTemperature = undefined;
 
 searchButton.addEventListener('mouseup', () => {
@@ -21,6 +20,10 @@ searchInput.addEventListener('keyup', (keyEvent) => {
 unitsButton.addEventListener('click', switchUnits);
 
 document.addEventListener('mousedown', clearSearch);
+
+let initialCities = ['New York City', 'London', 'Glasgow', 'Amsterdam', 'Berlin', 'Melbourne,AU', 'San Francisco'];
+submitLocationSearch(initialCities[Math.floor(Math.random() * initialCities.length)]);
+
 
 async function submitLocationSearch(location) {
     clearSearch();
