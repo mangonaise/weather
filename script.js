@@ -26,7 +26,7 @@ async function submitLocationSearch(location) {
     clearSearch();
 
     try {
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=1ab1cbfffac40206bec3585fd01bc9d8`, {mode: 'cors'});
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=1ab1cbfffac40206bec3585fd01bc9d8`, {mode: 'cors'});
         let data = await response.json();
         displayWeatherData(data);
     } catch {
