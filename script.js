@@ -22,7 +22,7 @@ unitsButton.addEventListener('click', switchUnits);
 document.addEventListener('mousedown', clearSearch);
 
 let initialCities = ['New York City', 'London', 'Glasgow', 'Amsterdam', 'Berlin', 'Melbourne,AU', 'San Francisco'];
-// submitLocationSearch(initialCities[Math.floor(Math.random() * initialCities.length)]);
+submitLocationSearch(initialCities[Math.floor(Math.random() * initialCities.length)]);
 
 
 async function submitLocationSearch(location) {
